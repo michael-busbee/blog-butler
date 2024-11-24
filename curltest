@@ -65,19 +65,12 @@ publish_changes() {
     echo "Changes published successfully!"
 }
 
-# Function to print help message
 print_help() {
     echo "Usage:"
     echo "  blog new                   - Create a new blog post"
     echo "  blog publish [message]     - Publish changes with optional commit message"
     echo "  blog help                   - Display this help message"
     exit 1
-}
-
-# Function to upgrade blog script from github source
-upgrade() {
-    curl "https://raw.githubusercontent.com/michael-busbee/blog-butler/refs/heads/main/blog.sh" > ~/bin/blog
-    chmod +x ~/bin/blog
 }
 
 # Main script logic
@@ -91,8 +84,6 @@ case "$1" in
     "help")
         print_help
         ;;
-    "upgrade")
-        upgrade
     *)
         print_help
         ;;
