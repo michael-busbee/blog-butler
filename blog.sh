@@ -93,6 +93,7 @@ case "$1" in
         ;;
     "upgrade")
         upgrade
+        ;;
     *)
         print_help
         ;;
