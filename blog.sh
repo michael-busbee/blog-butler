@@ -79,6 +79,7 @@ print_help() {
 upgrade() {
     curl "https://raw.githubusercontent.com/michael-busbee/blog-butler/refs/heads/main/blog.sh" > ~/bin/blog
     chmod +x ~/bin/blog
+    echo "Upgrade Successful!"
 }
 
 # Main script logic
