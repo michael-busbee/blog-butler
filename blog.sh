@@ -65,6 +65,14 @@ publish_changes() {
     echo "Changes published successfully!"
 }
 
+print_help() {
+    echo "Usage:"
+    echo "  blog new                   - Create a new blog post"
+    echo "  blog publish [message]     - Publish changes with optional commit message"
+    echo "  blog help                   - Display this help message"
+    exit 1
+}
+
 # Main script logic
 case "$1" in
     "new")
@@ -73,10 +81,10 @@ case "$1" in
     "publish")
         publish_changes "$2"
         ;;
+    "help")
+        print_help
+        ;;
     *)
-        echo "Usage:"
-        echo "  blog.sh new                   - Create a new blog post"
-        echo "  blog.sh publish [message]     - Publish changes with optional commit message"
-        exit 1
+        print_help
         ;;
 esac
