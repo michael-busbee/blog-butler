@@ -68,9 +68,10 @@ publish_changes() {
 # Function to print help message
 print_help() {
     echo "Usage:"
-    echo "  blog new                   - Create a new blog post"
-    echo "  blog publish [message]     - Publish changes with optional commit message"
+    echo "  blog new                    - Create a new blog post"
+    echo "  blog publish [message]      - Publish changes with optional commit message"
     echo "  blog help                   - Display this help message"
+    echo "  blog upgrade                - Upgrade this script from it's github script"
     exit 1
 }
 
