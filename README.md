@@ -6,18 +6,18 @@ This repository contains a simple utility to make the `blog.sh` script globally 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blog-script.git
+   git clone https://github.com/michael-busbee/blog-butler.git
    ```
 
 2. Navigate to the repository directory:
    ```bash
-   cd blog-script
+   cd blog-butler
    ```
 
 3. Run the setup script:
    ```bash
-   chmod +x setup-blog.sh
-   ./setup-blog.sh
+   chmod +x install.sh
+   ./install.sh
    ```
 
 4. Activate the changes by either:
@@ -28,7 +28,7 @@ This repository contains a simple utility to make the `blog.sh` script globally 
 
 The setup script will:
 - Create a `~/bin` directory if it doesn't exist
-- Create a symbolic link to make `blog.sh` accessible as just `blog`
+- Copy `blog.sh` to `~/bin/blog`
 - Add `~/bin` to your PATH (if not already there)
 - Make the necessary files executable
 
@@ -36,7 +36,7 @@ The setup script will:
 
 After installation, you can run the blog script from anywhere by simply typing:
 ```bash
-blog
+blog help
 ```
 
 ## Requirements
